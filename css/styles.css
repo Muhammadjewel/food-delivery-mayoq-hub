@@ -334,3 +334,46 @@ img {
   border-left: 12px solid #333;
   content: "";
 }
+
+/* POPULAR-DISHES */
+.popular-dishes {
+  padding-top: 140px;
+  padding-bottom: 103px;
+}
+
+.popular-dishes__heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 48px;
+  line-height: normal;
+  text-align: center;
+}
+
+.popular-dishes__filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.popular-dishes__filter-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.popular-dishes__filter-link {
+  display: block;
+  padding: 16px 40px;
+  border-radius: 45px;
+  font-weight: 600;
+  background-color: #eceef6;
+  color: #151515;
+  text-decoration: none;
+}
+
+.popular-dishes__filter-item--active .popular-dishes__filter-link {
+  background-color: #59aaf1;
+  color: #fff;
+}
