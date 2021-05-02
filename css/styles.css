@@ -88,6 +88,7 @@ img {
 .site-header {
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-bottom: 105px;
   font-size: 16px;
   line-height: normal;
 }
@@ -172,4 +173,53 @@ img {
 /* LOGO */
 .logo__img {
   display: block;
+}
+
+/* HERO */
+.hero {
+  background-color: #f0f5fb;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/hero-bg@2x.png");
+  }
+}
+
+.hero__text {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 27px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.hero__small-text {
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.hero__img-wrapper {
+  position: relative;
+  bottom: -109px;
+  display: flex;
+  justify-content: center;
+  margin-top: -109px;
 }
