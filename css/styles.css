@@ -56,6 +56,7 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  background-color: #fff;
   color: #222;
 }
 
@@ -218,8 +219,54 @@ img {
 
 .hero__img-wrapper {
   position: relative;
+  z-index: 1;
   bottom: -109px;
   display: flex;
   justify-content: center;
   margin-top: -109px;
+}
+
+.hero__img {
+  margin-left: 150px;
+}
+
+.hero__promo {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% + 350px);
+  top: 95px;
+  width: 200px;
+  text-align: right;
+}
+
+.hero__promo::before {
+  position: absolute;
+  right: 110%;
+  top: 35px;
+  width: 141px;
+  height: 41px;
+  background-image: url("../img/hero-promo-line.svg");
+  content: "";
+}
+
+.hero__promo::after {
+  position: absolute;
+  z-index: 1;
+  right: 190%;
+  top: 100px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center center;
+  box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  content: "";
+}
+
+.hero__promo-price {
+  color: var(--accent-color);
+  font-weight: bold;
 }
